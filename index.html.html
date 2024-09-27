@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calc.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="container">
+        <form action="">
+            <input type="text" id="result" readonly>
+            <br>
+            <input class="button number" type="button"  value="(">
+            <input class="button number" type="button" value=")">
+            <input class="button number" type="button" onclick="calcScreenClear()" value="C">
+            <input class="button operator" type="button" onclick="displayContent('/')" value="/">
+            <br>
+            <input class="button number" type="button" onclick="displayContent('7')" value="7">
+            <input class="button number" type="button" onclick="displayContent('8')" value="8">
+            <input class="button number" type="button" onclick="displayContent('9')" value="9">
+            <input class="button operator" type="button" onclick="displayContent('*')" value="x">
+            <br>
+            <input class="button number" type="button" onclick="displayContent('4')" value="4">
+            <input class="button number" type="button" onclick="displayContent('5')" value="5">
+            <input class="button number" type="button" onclick="displayContent('6')" value="6">
+            <input class="button operator" type="button" onclick="displayContent('-')" value="-">
+            <br>
+            <input class="button number" type="button" onclick="displayContent('1')" value="1">
+            <input class="button number" type="button" onclick="displayContent('2')" value="2">
+            <input class="button number" type="button" onclick="displayContent('3')" value="3">
+            <input class="button operator" type="button" onclick="displayContent('+')" value="+">
+            <br>
+            
+            <input class="button number" type="button" onclick="displayContent('0')" value="0">
+            <input class="button number" type="button" onclick="displayContent('.')" value=".">
+            <input class="button number" type="button" onclick="removeLastDigit()" value="del">
+            <input class="button equal" type="button" onclick="calcOutput()" value="=">
+            
+        </form>
+    </div>
+    
+</body>
+<script src="./calc.js"></script>
+</html>
